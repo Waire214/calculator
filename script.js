@@ -20,6 +20,7 @@ buttons.forEach((button) => {
               .replace(/×/g, "*")
               .replace(/÷/g, "/")
               .replace(/\^/g, "**")
+              .replace(/%/g, "/100")
           );
           display.textContent = parseFloat(result.toFixed(10));
           addToHistory(expression, parseFloat(result.toFixed(10)));

@@ -108,7 +108,7 @@ button:hover {
     padding: 20px;
     box-shadow: 0px 4px 4px 0px #00000040;
     width: 360px;
-    height: 300px;
+    min-height: 300px;
     overflow-y: auto;
     color: white;
     font-size: 14px;
