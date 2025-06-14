@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="calculator">
+  <div class="calculator" id="calculator">
     <div class="display" id="display"></div>
     <!-- Buttons are used for semantic purposes and to allow for easy styling. -->
-    <div class="buttons">
+    <div class="buttons" id="buttons-container">
       <button>1</button>
       <button>2</button>
       <button>3</button>
@@ -34,7 +34,14 @@
       <button id="backspace">⌫</button>
       <button id="equals">=</button>
       <button id="clear">C</button>
+      <button id="toggle-history">🕒</button>
     </div>
+  </div>
+
+  <div id="history-view" class="history-view" style="display: none;">
+    <button id="back-to-calc">← Back</button>
+    <h3>History</h3>
+    <ul id="history-list"></ul>
   </div>
 
   <script src="script.js"></script>
